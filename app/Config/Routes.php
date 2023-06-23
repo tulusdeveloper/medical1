@@ -39,7 +39,7 @@ $routes->get('/', 'Home::index');
 
 // Module routes
 
-$routes->group('dashboard', ['namespace' => 'Modules\Dashboard\Controllers'], function ($routes) {
+$routes->group('dashboard', ['namespace' => 'App\Modules\Dashboard\Controllers'], function ($routes) {
     $routes->get('/', 'Dashboard::index');
     // Add more routes for the Dashboard module if needed
 });
